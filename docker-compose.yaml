@@ -1,0 +1,31 @@
+version: "3.4"
+services:
+
+    nats:
+        image: "nats:2.9.9"
+        command: --js
+        ports:
+            - "8222:8222"
+            - "4222:4222"
+
+    influxdb:
+        image: "influxdb:1.8.1"
+        environment:
+            INFLUXDB_DB: "\"nbomber\""
+        ports:
+            - "8086:8086"
+        volumes:
+            - 'influxdb-storage:/var/lib/influxdb'
+
+    grafana:
+        image: "grafana/grafana:8.5.2"
+        ports:
+            - "3000:3000"
+        depends_on:
+            - "influxdb"
+        volumes:
+            - 'grafana-storage:/var/lib/grafana'
+
+volumes:
+    influxdb-storage:
+    grafana-storage:

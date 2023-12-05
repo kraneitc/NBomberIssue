@@ -1,0 +1,9 @@
+{
+    "InfluxDBSink": {
+      "Url": "http://localhost:8086",
+      "Database": "nbomber",
+      "UserName": "username",
+      "Password": "password",      
+      "CustomTags": [{"Key": "environment", "Value": "linux"}]
+    }
+}

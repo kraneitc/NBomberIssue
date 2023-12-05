@@ -1,0 +1,22 @@
+{
+    "TestSuite": "API test suite",
+    "TestName": "API test",
+
+    "ClusterSettings": {
+
+        "AutoCluster": {
+            "ClusterId": "cluster1",
+            "NATSServerURL": "nats://localhost",
+
+            "Coordinator": {
+                "TargetScenarios": ["hello_world_scenario"]
+            },
+
+            "Agent": {
+                "TargetScenarios": ["hello_world_scenario"],
+                "AgentsCount": 1
+            }
+        }
+
+    }    
+}
