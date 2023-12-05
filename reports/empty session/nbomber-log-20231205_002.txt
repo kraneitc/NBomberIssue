@@ -1,0 +1,19 @@
+2023-12-05 17:19:05.290 +10:30 [INF] [ThreadId:11] NBomber Cluster 5.4.0 started a new session: empty session
+2023-12-05 17:19:05.302 +10:30 [INF] [ThreadId:11] NBomber started as Agent 
+ 
+{ ClusterId = "cluster1"
+  NATSServerURL = "nats://localhost"
+  AgentGroup = "autocluster" }
+
+2023-12-05 17:19:19.087 +10:30 [INF] [ThreadId:19] Received a new session: 2023-12-05_06.49.03_session_cb636d49
+2023-12-05 17:19:24.180 +10:30 [INF] [ThreadId:19] Reports folder: C:\Users\app-lunns0\source\repos\NBomberIssue\bin\Release\net8.0\reports\empty session
+2023-12-05 17:19:24.184 +10:30 [INF] [ThreadId:19] Plugins: no plugins were loaded
+2023-12-05 17:19:24.186 +10:30 [INF] [ThreadId:19] Reporting sink loaded: NBomber.Sinks.InfluxDB
+2023-12-05 17:19:24.187 +10:30 [INF] [ThreadId:19] Starting init...
+2023-12-05 17:19:24.190 +10:30 [INF] [ThreadId:19] Start init reporting sink: NBomber.Sinks.InfluxDB
+2023-12-05 17:19:24.231 +10:30 [INF] [ThreadId:19] Target scenarios: hello_world_scenario
+2023-12-05 17:19:24.233 +10:30 [INF] [ThreadId:19] Init finished
+2023-12-05 17:19:29.249 +10:30 [INF] [ThreadId:19] Starting bombing...
+2023-12-05 17:20:10.525 +10:30 [INF] [ThreadId:8] Waiting on scenarios completion...
+2023-12-05 17:20:14.528 +10:30 [INF] [ThreadId:13] Stopping scenarios...
+2023-12-05 17:20:22.069 +10:30 [INF] [ThreadId:19] Calculating final statistics...
